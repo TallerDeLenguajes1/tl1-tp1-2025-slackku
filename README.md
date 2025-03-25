@@ -9,8 +9,8 @@ Comenzando desde el vacio mismo debemos hacer lo siguiente:
 
 1. Creamos el archivo *ignorado.txt* y el archivo *.gitignore*.
 ```
-    touch ignorado.txt
-    touch .gitignore
+    echo "{Lo que sea}" >> ignorado.txt
+    echo "" >> .gitignore  
 ```
 2. Dentro del archivo *.gitignore*, para ignorar el archivo creado *ignorado.txt*, debemos incluir lo siguiente:
 ```
