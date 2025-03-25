@@ -36,6 +36,14 @@ int main()
     mostrarInfo(&numero3);
     mostrarInfo(&numero4);
 
+    printf("------- Orden de dos numeros -------\n");
+    printf("(basado en los dos ultimos numeros ingresado)\n");
+    orden(&numero3, &numero4);
+    printf("#### Menor numero ####\n");
+    mostrarInfo(&numero3);
+    printf("#### Mayor numero ####\n");
+    mostrarInfo(&numero4);
+
     return 0;
 }
 
@@ -66,8 +74,15 @@ void cuadradoVoid(int *numero)
 
 void invertir(int *a, int *b)
 {
-    int aux;
-    aux = *a;
+    int aux = *a;
     *a = *b;
     *b = aux;
+}
+
+void orden(int *a, int *b)
+{
+    if (*a > *b)
+    {
+        invertir(a, b);
+    }
 }
