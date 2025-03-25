@@ -43,7 +43,7 @@ int main()
     mostrarInfo(&numero3);
     printf("#### Mayor numero ####\n");
     mostrarInfo(&numero4);
-
+    // Apartado f punto 4 terminado, comentario para hacer commit final 
     return 0;
 }
 
